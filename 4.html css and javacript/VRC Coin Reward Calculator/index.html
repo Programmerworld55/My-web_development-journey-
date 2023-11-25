@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="parent">
+            <div class="child heading"><span>VRC </span><span id="two">Reward Calculation</span></div>
+            <div class="child black">Total Coins On Stack</div>
+            <div class="child white">10705707.0271</div>
+            <div class="child black">Per_Day Coin Launch In Market</div>
+            <div class="child white ">83424.66</div>
+            <div class="child black">Percoin Reward Is</div>
+            <div class="child white" id="perday_reward_id"></div>
+            <div class="child">Enter coin u staked</div>
+            <div class="child color"><input type="number" class="input_tag" placeholder="Enter Here" id="user_coin">
+            </div>
+            <div class="child">Your Daily Reward is </div>
+            <div class="child colorr" id="daily_reward_id">Daily reward</div>
+            <div class="child">Your Monthly Reward is </div>
+            <div class="child colorr" id="monthly_r_id">monthly reward</div>
+            <div class="child">Time Required To get Coin Back</div>
+            <div class="child colorr" id="get_coin_back">0</div>
+            <div class="child " id="extraa">Time required for 1 vrc</div>
+            <div class="child colorr" id="extraa2">0</div>
+            <div class="child " id="own_name">By Mind Hacker</div>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    let perday_reward_id = document.getElementById("perday_reward_id")
+    let daily_reward_id = document.getElementById("daily_reward_id")
+    let monthly_reward_id = document.getElementById("monthly_r_id")
+    let user_coin = document.getElementById("user_coin")
+    let extraa = document.getElementById("extraa")
+    let extraa2 = document.getElementById("extraa2")
+    let get_coin_back = document.getElementById("get_coin_back")
+    // ........
+    let total_coins = 0;
+    let perday_investor_reward = 83424.66;
+    let total_coin_stack = 12068909.9666;
+    let perday_reward = perday_investor_reward / total_coin_stack;
+    // ........................
+    let user_coins = 0;
+    perday_reward_id.innerHTML = perday_reward
+    user_coin.addEventListener('input', function () {
+        user_coins = user_coin.value
+        daily_rewardddd = perday_reward * user_coins
+        daily_reward_id.innerHTML = daily_rewardddd + "vrc";
+        monthly_reward_id.innerHTML = daily_rewardddd * 30 + "vrc";
+        let number_of_days = 1 / daily_rewardddd;
+        if (user_coin.value > 129) {
+            extraa.style.display = "none"
+            extraa2.style.display = "none"
+
+        }
+        else {
+
+            extraa2.innerHTML = Math.floor(number_of_days) + " Days"
+        }
+        let coin_back = user_coin.value / daily_rewardddd;
+        get_coin_back.innerHTML = Math.floor(coin_back) + " Days";
+
+        console.log("user coins are : ", user_coin.value)
+        console.log("daily reward is : ", daily_rewardddd)
+        console.log("coin back are : ", coin_back)
+    })
+
+
+
+
+
+
+</script>
+
+</html>

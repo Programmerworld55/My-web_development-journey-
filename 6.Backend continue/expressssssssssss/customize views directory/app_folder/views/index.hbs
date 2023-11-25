@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f85115b0d8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+
+            <nav id="sidemenu">
+                <img src="resources/logo1.jpg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-square-xmark icon" onclick="closemenu"></i>
+                </ul>
+                <i class="fa-solid fa-bars icon" onclick="openmenu"></i>
+            </nav>
+            <div class="header_text">
+                <p>Web Developer</p>
+                {{!-- <h1>Hi,I'm <span>Asad Bashir</span><br> From Pakistan.</h1> --}}
+                <h1>Hi,I'm <span>{{user_name}}</span><br> From Pakistan.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ABout................................................................. -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1"><img src="resources/bgggg.jpg" alt=""></div>
+                <div class="about_col_2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>I am a passionate web and app developer, deeply engrossed in the world of coding and technology.
+                        Currently, I am pursuing my Bachelor's degree in Computer Science (BSCS) from the esteemed
+                        University of AJK. My journey into the realm of programming began with an insatiable curiosity
+                        that led me to explore the intricacies of web and app development.
+                        With a keen eye for design and a knack for problem-solving, I constantly strive to create
+                        innovative and user-friendly digital experiences. My academic pursuit at the University of AJK
+                        has provided me with a strong foundation in computer science principles, enhancing my skills in
+                        algorithms, data structures, and software engineering practices.</p>
+                    <div class="tab_titles">
+                        <p class="tab_links activelink" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab_links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Desigining Web/App</li>
+                            <li><span>App Deveoper</span><br>Flutter</li>
+                            <li><span>Python Developer</span><br>Desktop Applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="experience">
+                        <ul>
+                            <li><span>july-2021 Dec-2021</span><br>Web Development Internship At Islamabad Software
+                                House</li>
+                            <li><span>2022-Current</span><br>Remote Intership </li>
+                            <li><span>Jan-2021 july-2021</span><br>Internship AT Islamabad Software House</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>2021_Current</span><br>Doing BSCS from University of AJK </li>
+                            <li><span>2022</span><br>Certified As Web Developer From Coursera</li>
+                            <li><span>2020</span><br>Completed Second Year</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ......................................Services............................................................................................ -->
+    <div id="services">
+        <div id="services">
+            <div class="container">
+                <h1 class="sub_title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>As a web developer, I am driven by my passion for creating engaging and interactive online
+                            experiences. With a keen eye for design and a strong grasp of coding languages such as HTML,
+                            CSS, and JavaScript, I specialize in crafting visually appealing and responsive websites. My
+                            expertise extends to front-end and back-end development, ensuring seamless functionality and
+                            user-friendly interfaces.
+                            I thrive on the challenge of transforming creative concepts into functional websites,
+                            implementing innovative features and ensuring optimal performance across various devices and
+                            browsers. Constantly staying updated with the latest web technologies, I adapt my skills to
+                            deliver cutting-edge solutions to clients' unique needs.</p>
+                        <a href="#">Learn more...</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Development</h2>
+                        <p>As a Flutter app developer, I am dedicated to building cross-platform mobile applications
+                            with a focus on exceptional user experiences. Flutter's versatile framework allows me to
+                            create visually appealing interfaces and interactive features for both Android and iOS
+                            platforms, ensuring a consistent look and feel across devices.
+
+                            With proficiency in Dart programming language and extensive knowledge of Flutter's widgets
+                            and libraries, I specialize in developing high-quality, responsive, and performant apps. I
+                            leverage Flutter's hot reload feature to iterate quickly, allowing for rapid development and
+                            efficient debugging.</p>
+                        <a href="#">Learn more...</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <h2>Python Development</h2>
+                        <p>As a Python developer, I am deeply passionate about leveraging the simplicity and power of
+                            Python programming language to solve complex problems and create efficient solutions.
+                            Python's readability and versatility allow me to develop a wide range of applications, from
+                            web development and data analysis to artificial intelligence and automation.
+
+                            My expertise in Python extends to frameworks like Django and Flask, enabling me to build
+                            robust and scalable web applications. I also specialize in data science libraries such as
+                            Pandas, NumPy, and Matplotlib, harnessing the language's capabilities for insightful data
+                            analysis and visualization.</p>
+                        <a href="#">Learn more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ....................................portfolio.................................................................. -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Work</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="resources/work-1.png">
+                    <div class="layer">
+                        <h3>Website</h3>
+                        <p>"I have developed a dynamic and user-friendly web application, showcasing my expertise as a
+                            web developer. This project demonstrates my proficiency in front-end technologies like HTML,
+                            CSS, and JavaScript, coupled with back-end prowess using frameworks like Django/Flask. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="resources/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>"I've crafted a vibrant and interactive social app, exemplifying my skills as a mobile app
+                            developer. This project showcases my expertise in Flutter, enabling seamless cross-platform
+                            functionality for both Android and iOS users. The app features elegant UI/UX designs,
+                            real-time messaging, and social networking capabilities, embodying my dedication to creating
+                            engaging and meaningful social experiences in the digital realm."</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="resources/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping Application</h3>
+                        <p>"I have engineered a sophisticated online shopping application powered by Python,
+                            highlighting my proficiency in full-stack development. This project demonstrates my
+                            expertise in technologies like Django and Flask, ensuring a secure and seamless shopping
+                            experience. The application boasts user-friendly interfaces, robust payment gateways, and
+                            inventory management systems, reflecting my dedication to creating scalable and efficient
+                            e-commerce solutions</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ............................Contact....................................... -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="sub_title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        asadbashir2229526@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>03400569133</p>
+                    <div class="social_icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="resources/my-cv.pdf" Download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact_right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2 btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright Asad.Made By<i class="fa-solid fa-heart"></i>Me</p>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab_links");
+    var tabcontents = document.getElementsByClassName("tab_contents");
+    function opentab(tab_name) {
+        console.log("clicked")
+        for (tablink of tablinks) {
+            tablink.classList.remove("activelink");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active_tab");
+        }
+        event.currentTarget.classList.add("activelink")
+        document.getElementById(tab_name).classList.add("active_tab")//will add css active_tab property on current tab.
+        console.log("current tab is : ", tab_name)
+
+    }
+    var sidemnu = document.getElementById("sidemenu")
+    function openmenu() {
+        sidemenu.style.right = "0";
+        console.log("runinggggggggggggggggg")
+
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyZxJ6EvtlUlZqoanzVw_uTORIJA5M71_eX05mTEJYcyJ2IcH4WY4haTACT-ZDA2Os8/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">container</div>
+    <script>
+        let jsonobj={
+            name:"abc",
+            occupation:"programmer"
+        }
+        console.log(jsonobj)
+        // use of json stringyfy
+        let myjsonstr=JSON.stringify(jsonobj);
+        console.log(myjsonstr)
+        //modify string
+        myjsonstr=myjsonstr.replace('abc','xyz')
+        console.log(myjsonstr)
+        //again convert string to object
+        newjsonobj=JSON.parse(myjsonstr)
+        console.log(newjsonobj)
+    </script>
+</body>
+</html>

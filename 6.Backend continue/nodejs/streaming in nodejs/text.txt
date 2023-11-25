@@ -1,0 +1,4 @@
+name:coder
+occupation:coding
+current_pos:Learning
+live streaming with pipemethod

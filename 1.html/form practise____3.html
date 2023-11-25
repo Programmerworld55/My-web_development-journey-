@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="backend.php">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="my_name" id="name">
+    </div>
+    <br>
+    <div>
+        <label for="id">Enter ID</label>
+        <input type="number" name="my_id" id="id">
+    </div>
+    <br>
+    <div>
+        <label for="pass">Enter ID</label>
+        <input type="password" name="my_pass" id="pass">
+    </div>
+    <br>
+    <div>
+        <label for="prof">Choose Profession</label>
+        <select name="my_profession" id="prof">
+        <option value="Hacker">Hacker</option>
+        <option value="Programmer">Programmer</option>
+        <option value="AI">AI Expert</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="gender">Select Gender</label><br>
+        Male<input  type="radio" name="my gender" id="gender">
+        Female<input type="radio" name="my gender" id="genderr">
+    </div>
+    <div>
+        <input type="submit" value="submit Form">
+        <input type="reset" value="Reset Form">
+    </div>
+</form>
+
+</body>
+</html>

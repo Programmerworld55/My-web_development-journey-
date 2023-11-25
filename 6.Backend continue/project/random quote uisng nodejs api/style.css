@@ -1,0 +1,57 @@
+.main_container{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* 100% height of the viewport */
+    width: 100vw;
+}
+.container_box{
+    height: 410px;
+    width: 700px;
+    border: 4px solid cornflowerblue;
+    border-radius: 20px 20px 0 0;
+    background-color:aquamarine;
+    align-items: center;
+    justify-content: center;
+}
+.quotes{
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+    
+}
+.author{
+   
+    font-style: italic;
+    height: 100px;
+    background-color: cornflowerblue;
+}
+.btn{
+    margin-top: -10px;
+    font-weight: 500px;
+    float:right;
+    padding: 12px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    /* border: 4px solid grey; */
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.tweet{
+    margin-top: -10px;
+    font-weight: 500px;
+    float:left;
+    padding: 12px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    /* border: 4px solid grey; */
+    cursor: pointer;
+    background-color: blue;
+   
+    color: white;
+}

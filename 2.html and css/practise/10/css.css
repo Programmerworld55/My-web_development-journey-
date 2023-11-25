@@ -1,0 +1,33 @@
+.navbar{
+    margin-top: 0px;
+    background-color:rgb(1 45 45);
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+body{
+    background-image: url("C:/Users/JK.tech/OneDrive/Desktop/frontend practise/resources/window view.jfif");
+}
+.navbar li{
+    float:left;
+    list-style: none;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+.navbar ul{
+    overflow:auto;
+}
+.search input{
+    float: right;
+    margin-top: 5px;
+
+}
+#search_id{
+    float: right;
+    margin-right: 20px;
+    margin-top:5px;
+    color:gray;
+    margin-left: 5px;
+
+}

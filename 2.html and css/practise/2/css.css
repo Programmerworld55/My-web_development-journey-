@@ -1,0 +1,20 @@
+h3{
+    color: red;
+}
+#blue{
+    background-color: blue;
+}
+.red_element{
+    color: yellowgreen;
+}
+p{
+    color:grey;
+    border: 2px solid red;
+}
+.bg_blue{
+    background-color: blue;
+}
+footer,span{
+    background-color: blueviolet;
+    /* color: aquamarine; */
+}

@@ -1,0 +1,74 @@
+body{
+    background-color: Black;
+    background-image: url("laptop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.3; */
+}
+/* .main_container{
+    display: flex;
+} */
+.navbar{
+    display: flex;
+}
+.items{
+    display: flex;
+    margin-left: 0px;
+} 
+.items li{
+    color: white;
+    list-style: none;
+    padding:20px;
+    align-self: center;
+}
+.items li:hover{
+    color:Blue;
+    text-decoration: underline;
+}
+/* ............................ */
+.welcome_heading{
+    display:flex;
+    color: white;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 100px;
+} 
+.main_box{
+    display:flex;
+    flex-direction: column;
+    border:2px solid brown;
+    width:500;
+    height:500;
+}
+.image_div{
+    width:500px;
+    height:350px;
+    background-color: green;
+    align-self:center;
+    margin-left: 100px;
+    background-image: url("laptop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inner_image{
+    width:200px;
+    height:200px;
+    background-color: green;
+    /* margin-left: 50px; */
+    background-image: url("laptop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 200px;
+    /* margin-right:70px; */
+    border: 2px solid blueviolet;
+    border-style:dotted;
+    border-radius: 10px;
+    
+   
+}
+
+.inner_image:hover{
+    transform: scale(2);
+
+}

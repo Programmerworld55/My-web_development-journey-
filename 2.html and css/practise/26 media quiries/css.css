@@ -1,0 +1,33 @@
+.container{
+    display: grid;
+    grid-template-areas: 
+    'navbar navbar navbar navbar '
+    'section section section sidebar'
+    'footer footer footer footer';
+}
+#navbar{
+    grid-area: navbar;
+}
+#section{
+    grid-area: section;
+}
+#sidebar{
+    grid-area: sidebar;
+}
+#footer{
+    grid-area: footer;
+}
+.item{
+    border: 2px solid black;
+    padding: 10px 10px ;
+    margin: 10px;
+}
+@media  (min-width:77px) and (max-width:500px)
+{
+ .container{   grid-template-areas: 
+    'navbar navbar navbar navbar '
+    'section section section section'
+    'sidebar sidebar sidebar sidebar'
+    'footer footer footer footer';
+ }
+} 

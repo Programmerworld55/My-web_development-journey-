@@ -1,0 +1,200 @@
+
+.logo{
+    width:100px;
+    height:80px;
+    background-image: url("Resources/logo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+}
+.navbar{
+    width:100%;
+    height: 100%;
+    display:flex;
+    position: sticky;
+    opacity: 0.8;
+}
+.navbar ul{
+    display:flex;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    color:white;
+    padding:20px;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+/* ............................Home Section.......................... */
+#home::before{
+    top: 0px;
+    content:"";
+    background-image: url("Resources/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 404px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+.welcome_heading{
+    text-shadow: 3px 3px black;
+}
+.primary_heading{
+    font-size: 3rem;
+    color: white;
+   
+
+}
+.buton{
+    padding:10px;
+    border-radius: 12px;
+    background-color:dimgray;
+    color:white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.buton:hover{
+    font-size: 1.2rem;
+    color: brown;
+}
+/*....................... services section........................ */
+.text_center{
+    color:black;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#services_container{
+    
+    /* display: flex; */
+    margin-top: 0px;
+}
+#services{
+    /* top:0px; */
+    display: flex;
+    /* border: 2px solid blue; */
+    margin: left 30px;
+}
+#services .box .secondary_heading{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+#services .box{
+    display:flex;
+    display: block;
+    height:240px;
+    width: 500px;
+    margin: auto;
+    margin-left:30px;
+    border-radius: 12px;
+    background-color: rgb(250, 255, 255);
+}
+#services .box img{
+    padding: 18px;
+    border-radius: 30px;
+    display: block;
+    height: 150px;
+    width:200px;
+    margin: auto;
+    
+}
+#services_container{
+    /* content:""; */
+    /* background-image: url("Resources/th\ \(3\).jpg"); */
+    background-image: url("Resources/box\ bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+/* #services .box{
+    background-image: url("Resources/box\ bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+} */
+/* client section............................... */
+#our_clients::before{
+    content: "";
+    position: absolute;
+    background-image: url("Resources/tea\ with\ laptop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    height: 300px;
+    width:1400px;
+
+}
+#our_clients{
+    margin-top: 30px;
+    /* border: 2px solid brown; */
+    height:300px;
+}
+#our_clients .clients{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+#our_clients .clients .client_item{
+    
+    padding: 20px;
+
+}
+
+#our_clients .clients .client_item img{
+    height: 70px;
+    margin-top: 0px;
+    padding-top: 0px;
+  
+}
+
+/* contact section...................... */
+#contact_section{
+    background-image: url("Resources/contact\ us\ 2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contact_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact_box input,
+#contact_box textarea{
+    width:100%;
+    padding:12px;
+}
+#contact_box .form_group label{
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#contact_box .form_group input,textarea{
+    font-size: 1.1rem;
+    border-radius: 12px;
+
+}

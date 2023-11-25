@@ -1,0 +1,41 @@
+.container{
+    padding:0;
+    margin:0;
+    width:600;
+    height:600;
+    border: 2px solid brown;
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    flex-wrap:wrap; 
+    /*----------------------------*/
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly;
+    justify-content: space-around;  */
+    /* align-items: center;it will work when flex-direction is column */
+
+}
+#box1{
+    background-color: blue;
+    width:100px;
+    height:100px;
+    /* order:3; */
+    /* flex-grow: 3; */
+}
+#box2{
+    background-color: red;
+    width:100px;
+    height:100px;
+    /* order:2; */
+    /* flex-grow: 2; */
+    align-self:center;
+}
+#box3{
+    background-color: GREEn;
+    width:100px;
+    height:100px;
+    /* order:1; */
+    /* flex-grow: 1; */
+    align-self: flex-end;
+}

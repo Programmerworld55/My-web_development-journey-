@@ -1,0 +1,56 @@
+#div{
+    background-color: black;
+    width:200px;
+    border: 2px solid blue;
+    border-radius: 25px;
+}
+#a{
+    color:blue;
+    width: 200px;
+    height: 25px;
+    background-color: black;
+    font-style: italic;
+}
+#b{
+    width: 200px;
+    height: 25px;
+    color:blue;
+    background-color:azure;
+    font-style: italic;
+}
+
+#e{
+    width: 200px;
+    height: 25px;
+    color:blue;
+    font-style: italic;
+}
+
+#c{
+    width:200px;
+    height: 25px;
+    color:blue;
+    background-color: azure;
+    font-style: italic;
+}
+#d{
+    width:200px;
+    height: 25px;
+    color: blue;
+    background-color: azure;
+    font-style: italic;
+}
+#b{
+    width:200px;
+    height: 25px;
+    
+    font-style: italic;
+}
+h1{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#link{
+    background-color: azure;
+    width: 200px;
+}

@@ -1,0 +1,190 @@
+.main_box{
+    border: 2px solid black;
+    width: 900pxpx;
+    height: 600px;
+    font-weight: bold;
+    font-family: inherit;
+}
+.mainbox1{
+    display: flex;
+    margin-top: 100px;
+}
+.box{
+    
+    height: 6px;
+    width: 32px;
+    color:black;
+    padding:2px;
+    margin-left:8px;
+    border: solid #f1e9e9 10px;
+    background-color: #f1e9e9;
+    font-size: 12px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.box:hover{
+    color: blue;
+    cursor: pointer;
+}
+/* mainbox2 ....................................*/
+.mainbox2{
+    display: flex;
+    margin-top: 10px;
+}
+.box2{
+    height: 32px;
+    width: 32px;
+    color:black;
+    margin-left:8px;
+    padding: 2px;
+    border: solid #f1e9e9 10px;
+    background-color: #f1e9e9;
+    font-size: 12px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.box2:hover{
+    color: blue;
+    cursor: pointer;
+}
+.box2 i{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+#space{
+    height: 32px;
+    width: 94px;
+    margin-left:8px;
+    padding: 2px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+/* main box3..................................... */
+.mainbox3{
+    display: flex;
+    margin-top: 10px;
+}
+.box3{
+    height: 32px;
+    width: 32px;
+    color:black;
+    margin-left:8px;
+    padding: 2px;
+    border: solid #f1e9e9 10px;
+    background-color: #f1e9e9;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+.box3:hover{
+    color: blue;
+    cursor: pointer;
+}
+#tabb{
+    height: 32px;
+    width: 94px;
+    margin-left:8px;
+    padding: 2px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+#plusrepeat{
+    height: 94px;
+    width: 32px;
+    margin-left:8px;
+    padding: 2px;
+    font-weight: bold;
+    border: solid #f1e9e9 10px;
+    background-color: #f1e9e9;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.box2#plusrepeat {
+    height: auto;
+}
+.mainbox4 .box4:first-child {
+    margin-top: 0;
+}
+/* mainbox4..................................... */
+.mainbox4 {
+    display:flex;
+    margin-top: 10px;
+}
+
+.box4{
+    /* align-self: flex-start; */
+    height: 32px;
+    width: 32px;
+    color:black;
+    margin-left:8px;
+    padding: 2px;
+    border: solid #f1e9e9 10px;
+    background-color: #f1e9e9;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.box4:hover{
+    color: blue;
+    cursor: pointer;
+}
+/* mainbox5............................................ */
+.mainbox5 {
+    display: inline-flex;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.box5{
+
+    height: 32px;
+    width: 32px;
+    color:black;
+    margin-left:8px;
+    padding: 2px;
+    border: solid #f1e9e9 10px;
+    background-color: #f1e9e9;
+    box-shadow: 2px 2px 2px 2px gray;
+    
+}
+.box5:hover{
+    color: blue;
+    cursor: pointer;
+}
+#pause_shift{
+    height: 32px;
+    width: 160px;
+    margin-left:8px;
+    padding: 2px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+/* mainbox6............................................... */
+.mainbox6 {
+    display: inline-flex;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.box6{
+    border: solid #f1e9e9 10px;
+    background-color: #f1e9e9;
+    box-shadow: 2px 2px 2px 2px gray;
+    height: 32px;
+    width: 32px;
+    color:black;
+    margin-left:8px;
+    padding: 2px;
+}
+.box6:hover{
+    color: blue;
+    cursor: pointer;
+}
+#spacebar{
+    height: 32px;
+    width: 360px;
+    margin-left:8px;
+    padding: 2px;
+    text-align: center;
+    border: solid #f1e9e9 10px;
+    background-color: #f1e9e9;
+    box-shadow: 2px 2px 2px 2px gray;
+}

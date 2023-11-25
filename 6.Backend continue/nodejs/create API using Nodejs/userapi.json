@@ -1,0 +1,21 @@
+[
+      {
+        "id": 1,
+        "name": "John Doe",
+        "position": "Software Engineer",
+        "salary": 75000
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "position": "Data Scientist",
+        "salary": 80000
+      },
+      {
+        "id": 3,
+        "name": "Bob Johnson",
+        "position": "UX Designer",
+        "salary": 70000
+      }
+    ]
+  

@@ -1,0 +1,58 @@
+.container{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(237, 100, 118);
+    background-color: azure;
+    width: 650px;
+    margin: auto;
+    border:2px  solid rgb(113, 113, 209);
+    
+}
+h3{
+    padding-left: 200px;
+}
+.cont2{
+    font-family: cursive;
+    font-style: bold;
+    color:black;
+    background-color: azure;
+    border: 2px solid blue;
+    width: 650px;
+    margin:auto;
+    
+}
+#a{
+    margin: auto;
+}
+#link{
+    color: black;
+    background-color: rgb(179, 167, 184);
+    font-size: small;
+    font-style: italic;
+    padding:2px;
+    border: 2px solid brown;
+    border-radius:8px;
+    cursor: pointer;
+
+}
+#buton{
+    color: black;
+    background-color: rgb(179, 167, 184);
+    font-style: italic;
+    padding:3px;
+    /* border: 2px solid brown;*/
+    border-radius:8px; 
+    cursor: pointer;
+}
+#link:hover{
+    color: red;
+    background-color: white;
+}
+#buton:hover{
+    color: red;
+    background-color: white;
+    /* border: black; */
+}
+#link:visited{
+    background-color: green;
+}

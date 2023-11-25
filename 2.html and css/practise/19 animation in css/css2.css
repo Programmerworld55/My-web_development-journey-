@@ -1,0 +1,93 @@
+:root{
+    --iteration_count:15;
+    --duration:1s;
+}
+.main-box{
+    width:1500px;
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    background-color:aqua;
+    border: 2px solid blue;
+}
+.animation-box{
+
+    width:100px;
+    height: 100px;
+    background-color:red ;
+    animation-name:animation_box;
+    animation-duration:var(--duration) ;
+    animation-iteration-count: var(--iteration_count);
+    animation-fill-mode:alternate;
+    animation-timing-function: ease-in;
+    animation-direction:alternate;
+
+}
+@keyframes animation_box {
+    0%{
+        align-self:flex-start;
+    }
+    50%{
+        background-color: blue;
+        align-self: center;
+    }
+    100%{
+        background-color: green;
+        align-self: flex-end;
+    }
+
+}
+.animation-box2{
+   margin-left: 500px;
+    width:100px;
+    height: 100px;
+    background-color:red;
+    animation-name:animation_box2;
+    animation-duration: var(--duration) ;
+    animation-iteration-count: var(--iteration_count);
+    animation-fill-mode:alternate;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+
+}
+@keyframes animation_box2 {
+    0%{
+        align-self:flex-start;
+    }
+    50%{
+        background-color: blue;
+        align-self: center;
+    }
+    100%{
+        background-color: green;
+        align-self: flex-end;
+    }
+
+}
+.animation-box3{
+     margin-left: 483px;
+     width:100px;
+     height: 100px;
+     background-color:red;
+     animation-name:animation_box3;
+     animation-duration: var(--duration) ;
+     animation-iteration-count: var(--iteration_count);
+     animation-fill-mode:alternate;
+     animation-timing-function: ease-in;
+     animation-direction: alternate;
+ 
+ }
+ @keyframes animation_box3 {
+    0%{
+        align-self:flex-start;
+    }
+    50%{
+        background-color: blue;
+        align-self: center;
+    }
+    100%{
+        background-color: green;
+        align-self: flex-end;
+    }
+ 
+ }

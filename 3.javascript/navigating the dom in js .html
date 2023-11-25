@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="container">
+        container
+        <div id="nav">
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>More About Us</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    let main=document.getElementById('main');
+    console.log(main)
+    // .......using id.................
+    let  nav=document.getElementById('nav');
+    console.log(nav)
+    console.log(nav.innerHTML)
+    // nav.innerHTML="<li>Home</li>"
+    //........using class name
+    let cont=document.getElementsByClassName('container')
+    console.log(" class is : ",cont)
+    console.log("content inside is : ",cont.innerHTML)
+    // ........................................
+    let sel=document.querySelector('#nav')
+    console.log(sel)
+    // .........................................
+    let sel2=document.querySelectorAll('#nav>li')
+    console.log(sel2)
+    console.log(sel2.innerHTML)
+
+    
+</script>
+</html>

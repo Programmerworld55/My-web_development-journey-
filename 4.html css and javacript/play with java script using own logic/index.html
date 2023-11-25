@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainbox">
+        <!-- <div class="box1"></div> -->
+        <div class="box1"><img src="light_off1.jpg" class="boximage" id="boxImage1"></div>
+        <div class="box2"><img src="light_off1.jpg" class="boximage" id="boxImage2"><div>
+            <button type="button" class="button1" onclick="toggleBtn()" id="btn1"><span></span></button>
+            <button type="button" class="button2 " onclick="toggleBtn2(this)" id="btn2"><span></span></button>
+    </div>
+   
+
+</body>
+<script>
+    var btn=document.getElementById("btn1")
+    var boxImage = document.getElementById("boxImage1");
+// ...............................................
+function toggleBtn() {
+    console.log("button clicked")
+    btn.classList.toggle("active");
+    
+    // Check if the button has the 'active' class
+    var isActive = btn.classList.contains("active");
+    
+    // Define the new source for the image based on button state
+    var newSrc = isActive ? "light_on1.jpg" : "light_off1.jpg";
+
+    // Change the image source based on the button state
+    boxImage.src = newSrc;
+    
+    // Logging for debugging purposes
+    console.log("Button state is active: " + isActive);
+    console.log("New source is: ", newSrc);
+}
+var btn2 = document.getElementById("btn2");
+var boxImage2 = document.getElementById("boxImage2");
+function toggleBtn2(button) {
+    console.log("button clicked");
+    button.classList.toggle("active");
+    
+    // Check if the button has the 'active' class
+    var isActive = button.classList.contains("active");
+    
+    // Define the new source for the image based on button state
+    var newSrc = isActive ? "light_on1.jpg" : "light_off1.jpg";
+
+    // Change the image source based on the button that was clicked
+    if (button.id === "btn2") {
+        boxImage2.src = newSrc;
+    } else {
+        boxImage.src = newSrc;
+    }
+    
+    // Logging for debugging purposes
+    console.log("Button state is active: " + isActive);
+    console.log("New source is: ", newSrc);
+}
+
+   function togglebtn3(){
+    btn.classList.toggle("active"); 
+    btn2.classList.toggle("active")
+   }
+</script>
+</html>

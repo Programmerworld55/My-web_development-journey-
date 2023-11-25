@@ -1,0 +1,43 @@
+.progressbar{
+    position: relative;
+    /* margin-top:30px ; */
+    width:100px;
+    height:100px;
+    background-color: green;
+    animation-name:progressbar ;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: alternate;
+    animation-timing-function: ease-in;/*start slow but with tim it will fast*/
+    /*animation-timing-function: ease-out;/*start fast but with tim it will slow*/
+    /*animation-timing-function: ease-in-out;/*start slow then fast then again slow*/
+    /* animation-delay: 5s; */
+    animation-direction: alternate;/*move in forward*/
+
+}
+/* @keyframes progressbar {
+    from{
+        width:0px;
+    }
+    To{
+        width:500px;
+    }
+} */
+@keyframes progressbar{
+    0%{
+        top:0px;
+        left: 0px;
+    }
+    50%{
+        top: 0px;
+        left:100px;
+    }
+    75%{
+        top:100px;
+    }
+    100%{
+        left:100px;
+        top:0px;
+        background-color: red;
+    }
+}

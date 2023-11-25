@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+
+    width: 900px;
+    border: 3px solid rgb(0, 162, 255);
+    margin: auto;
+    
+}
+.item{
+    border: solid rgb(189, 129, 129);
+    padding: 20px 20px 20px 20px;
+}
+#fruits{
+    float: left;
+    width: 48%;
+}
+#computer{
+    float: left;
+    width: 48%;
+}
+#stationary{
+    clear: both;
+    float: left;
+    width: 100%;
+
+}

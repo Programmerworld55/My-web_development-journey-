@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: Arial;
+    border: border-box;/*its mean there will no effect of border on height and width of element */
+    /* color: blue; */
+}
+/* navbar section................................................................................. */
+/* navbar first box............................................................................... */
+.navbar{
+    height: 100px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav_logo{
+    height: 100px;
+    width: 200px;
+}
+
+.logo{
+    background-image: url('resources/logo/amazon.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:90px;
+    width: 100%;
+}
+.border{
+    border:2px solid transparent;/*transparent mean border color is same as background color*/
+}
+.border:hover{
+    border: 2px solid white;
+}
+/* navbar second box........................................................................... */
+.location_box p{
+    font-size: 1rem;
+}
+.location_box {
+    align-items: center;
+    justify-content: center;
+}
+.location_box .icon p{
+    font-size: 1.5rem;
+}
+/* navbar Third box.............................................................................. */
+.nav_search{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid blue; */
+    width:600px;
+    height: 50px;
+    border-radius: 4px;
+}
+.search_select{
+    background-color: #f3f3f3;
+    width: 50px;
+    padding:5px ;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius:4px;
+    border: none;
+}
+.search_input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search_icon{
+    width: 45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color:rgb(219, 219, 21);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px;
+    color: black;
+
+}
+.nav_search:hover{
+    border: 4px solid orange;
+}
+/* navbar fourth box......................................................... */
+.nav_flag_box{
+    /* border: 2px solid blue; */
+    display:flex;
+}
+.flag_icon{
+    font-size: 1.3rem;
+}
+.nav_flag_box_select{
+    margin-left: 5px;
+    background:none;
+    color: white;
+    border: none;
+    font-family: bold;
+}
+/*navbar  5th box.............................................................. */
+.nav_signin p{
+    font-size: 1rem;
+}
+/* navbar 6th box................................................................ */
+.nav_cart i{
+    font-size: 35px;
+}
+/*.........................................panel section............................. */
+.panel{
+    height: 45px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.panel i{
+    padding-left: 30px;
+}
+.panel p{
+    padding: 30px;
+    font-size: 1.1rem;
+    line-height: 15px;
+    font-weight: 650; 
+}
+.panel span{
+    padding-left: 5px;
+    font-size: 1.1rem;
+    line-height: 15px;
+    font-weight: 650; 
+}
+/* ........................hero section.......................................... */
+.herosection{
+    height: 400px;
+    background-image: url('resources/Hero\ Section/2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.message{
+    margin-bottom: 0px;
+    background-color: white;
+    color: black;
+    height: 40px;
+    font-size: 0.85rem;
+    width:80%
+}
+/* .............................. content section ................................ */
+.content_section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f3f3f3;
+
+}
+.box{
+    margin-top: 10px;
+    /* border: 2px solid black; */
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 25px;
+}
+.box_image_1{
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.box_content{
+    margin-left: 30px;
+    margin-right: 10px;
+    
+}
+.box_content p{
+    font-size: 1rem;
+    list-style: none;
+    
+}
+.box_content a{
+    padding-top: 100px;
+    text-decoration: none;
+}
+.special_case{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* ................................footer section................................ */
+.foot_panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.89rem;
+}
+.foot_panel2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+}
+ul a{
+    display: block;
+}
+.class_for_all{
+    margin-top: 50px;
+}
+.class_for_all ul a{
+    padding-top: 10px;
+    color: #dddddd;
+}
+.class_for_all ul a:hover{
+    text-decoration: underline;
+}
+
+/* ..................................panel 4 */
+.foot_panel3{
+    background-color:#222f3d;
+    color: white;
+    height: 70px;
+    width:100%;
+    border-top:0.5px solid white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_box{
+    background-image: url('resources/logo/logoooooooooo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:70px;
+    width:250px;
+}
+/* ............................... panel4......................................... */
+.foot_panel4{
+    background-color:#222f3d;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 60px;
+}
+.pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.copyright{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+/* .............................................................................. */
+.intro_box{
+    font-size: 0.9rem;
+    background-color: #222f3d;;
+    display: flex;
+    align-items: end;
+    justify-self: flex-end;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    
+}
+.intro_box h3{
+    margin-bottom: 10px;
+}
+.transition_box{
+    transition-property: background-color;
+    transition-property: font-size;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.transition_box:hover{
+    background-color: cadetblue;
+    font-size: 20px;
+/* text-shadow: 10px 10px blue; */
+    box-shadow: 10px 10px blue;
+
+}
+
+/* .............................. classes for multiples elements.................. */
+.bold{
+    font-size: 1.1rem;
+    line-height: 15px;
+    font-weight: 700; 
+    background:none;
+    color: white;
+    border: none;
+    font-family:inherit;
+    
+}

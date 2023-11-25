@@ -1,0 +1,31 @@
+.main_container{
+    height:600px;
+    width:1400px;
+    background-color: black;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.transition_box{
+    align-self: center;
+    margin-left:400px;
+    text-align: center;
+    padding-top: 25px;
+    box-shadow: inset 5px 5px blue;
+    text-shadow: 5px 5px 5px red;
+    align-items: center;
+    width:600px;
+    height:50px;
+    background-color: aqua;
+    border: 2px solid blue;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-property: font-size;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.transition_box:hover{
+    background-color: cadetblue;
+    font-size: 40px;
+
+}

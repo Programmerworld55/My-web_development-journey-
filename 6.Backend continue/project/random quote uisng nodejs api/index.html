@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="container_box">
+            <div class="quotes">
+                <h1 id="quotes"></h1>
+            </div>
+            <div class="author">
+                <h1 id="author"></h1>
+                <button class="btn" onclick="getnewquotes()">New Quotes</button>
+                <button class="tweet" onclick="tweetquotes()">Tweet</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const quotes = document.getElementById("quotes");
+        const author = document.getElementById("author");
+        let json_data = "";
+
+
+        const getnewquotes = () => {
+            let rand_num = Math.floor(Math.random() * 10);
+            quotes.innerHTML = json_data[rand_num].text;
+            const authorr = json_data[rand_num].author.replace(", type.fit", "")
+            author.innerHTML = authorr
+        };
+        const getquotes = async () => {
+            const api = "https://type.fit/api/quotes";
+            try {
+                let data = await fetch(api)
+                json_data = await data.json();
+                getnewquotes();
+            }
+            catch (error) {
+                console.log(error)
+            }
+        }
+        const tweetquotes=()=>{
+            let tweetpost= `http://twitter.com/intent/tweet?text=${json_data[rand_num].text}`;
+            window.open(tweetpost);
+        }
+        getquotes();
+
+    </script>
+</body>
+
+</html>

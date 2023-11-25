@@ -1,0 +1,12 @@
+div li p{
+    background-color: aqua;
+    color: red;
+}
+div >p{
+    background-color: green;
+    color: red;
+}
+div+p{
+    background-color: black;
+    color: white;
+}

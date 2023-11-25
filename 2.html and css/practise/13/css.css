@@ -1,0 +1,25 @@
+body div{
+    width: 150px;
+    height:150px;
+}
+#box1{
+    z-index: -5;
+    position: relative;
+    top: 60px;
+    background-color: red;
+}
+#box2{
+    z-index: -10;
+    position: relative;
+    top: 40px;
+    background-color:blue;
+    /* NOTE:z-index will effect only when position is not static and default position is static it will only effect with postion relative ,absolute ,sticky and fixed */
+}
+#box3{
+    background-color:green;
+    /* visibility:hidden; */
+    /* difference b/w visibility and display-none is when we use visibility hidden then it will hide but consume space.but if we use display none it will hide and will not consume space also*/
+    display: none;
+}
+
+

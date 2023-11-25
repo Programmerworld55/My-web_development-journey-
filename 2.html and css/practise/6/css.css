@@ -1,0 +1,38 @@
+h3{
+    background-color:aqua;
+    color: black;
+}
+#a{
+    background-color: aquamarine;
+    width: 200px;
+    height: 100px;
+    border: 4px solid burlywood;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+}
+#b{
+    background-color: blueviolet;
+    width: 200px;
+    height: 100px;
+    border: 4px solid brown;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+}
+#c{
+    background-color: aquamarine;
+    width: 500px;
+    height: 500px;
+    border: 4px solid burlywood;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+    background-image: url("C:/Users/JK.tech/OneDrive/Desktop/frontend practise/resources/1.1.png");
+    background-position:top center;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+}

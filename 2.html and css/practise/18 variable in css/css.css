@@ -1,0 +1,14 @@
+:root{
+    --box_width:300px;
+    --box_height:300px;
+    --box_bg:aqua;
+}
+.main_container{
+    display: flex;
+}
+.box{
+    width: var(--box_width);
+    height: var(--box_height);
+    background-color:var(--box_bg);
+    margin: 20px 20px;
+}

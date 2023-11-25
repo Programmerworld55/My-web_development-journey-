@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time</title>
+    <link rel="stylesheet" href="css of date tim.css">
+</head>
+<body>
+    <div class="main_box">
+        <div class="box" id="timebox">time</div>
+        <div class="box2 box" id="datebox">date</div>
+    </div>
+    <div class="mainbox2">
+        <div class="namebox">
+            Mind Hacker
+        </div>
+    </div>
+<script>
+    // let now=new Date
+    //  console.log(now)
+    // ................................
+    // let now2=new Date(2022,10,6,10,53,50)
+    // console.log(now2)
+    let currentDate = new Date(); 
+    // .................................
+    let year=currentDate.getFullYear()
+    let date=currentDate.getDate()
+    let day=currentDate.getDay()
+    let currentMonth = currentDate.getMonth(); 
+    monthnames=['january','february','march','april','may','june','july','august','september','october','november','december']
+    days=['Sun','Mon','Tue','Wed','Thu','Fri','sat']
+    // console.log('Month is : ',monthnames[currentMonth])
+    // console.log('current year is : ',year)
+    // console.log('current date is : ',date)
+    // console.log('current day is : ',days[day])
+    // console.log("Date   : ",days[day],monthnames[currentMonth],'/',date,'/',year)
+
+//   setInterval(display_time,1000)
+  function display_time() {
+    let currentDate = new Date(); // Get the current date and time inside the function
+    let hours = currentDate.getHours();
+    let minutes = currentDate.getMinutes();
+    let seconds = currentDate.getSeconds();
+    let ampm = hours >= 12 ? 'PM' : 'AM';
+    // console.clear();
+    let timeString = `Time: ${hours} : ${minutes} : ${seconds} ${ampm}`;
+    console.log(timeString)
+    let datee=`Date : ${days[day]},${monthnames[currentMonth]}/${date}/${year}`;
+    console.log(datee)
+    timebox.innerHTML=timeString
+    datebox.innerHTML=datee
+    
+    
+}
+
+setInterval(display_time, 1000); // Call display_time function every 1000 milliseconds (1 second)
+
+</script>
+
+    
+</body>
+</html>

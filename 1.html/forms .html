@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="submit.txt">
+        <div>
+            <label for="name">Name</label>
+
+        </div>
+        <div>
+            <input type="text" name="my_name" id="name">
+        </div>
+        <br>
+        <label for="ph">PH#</label>
+        <div>
+            <input type="number" name="my_ph" id="ph">
+        </div>
+        <br>
+        <label for="DOB">DOB</label>
+        <div>
+            <input type="date" name="my_DOB" id="DOB">
+        </div>
+        <br>
+        <label for="email">Email</label>
+        <div>
+            <input type="email" name="my_email" id="email">
+        </div>
+        <br>
+        <label for="eligibility">ELIGIBLE?</label>
+        <div>
+            <input type="checkbox" name="eligbility_check" checked id="eligibility">
+        </div>
+        <br>
+        <label for="gender">gender</label>
+        <div>
+            <br>Male<input type="radio" name="my_gender">Female<input type="radio" name="my_gender" id="gender">
+        </div>
+        <br>
+        <label for="text">About Yourself</label>
+        <div>
+            <br><textarea name="about_me" cols="30" rows="10"></textarea id="text">
+    </div>
+    <div>
+        <label for="occu">select Occupation</label>
+        <select name="occupation" id="occu">
+            <option value="p">Programmer</option>
+            <option value="H">Hacker</option>
+            <option value="M">Manager</option>
+        </select>
+    </div>
+    <div>
+        <input type="submit" value="submit Form" >
+        <input type="reset" value="Reset Form">
+    </div>
+    </form>
+</body>
+</html>

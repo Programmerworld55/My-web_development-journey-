@@ -1,0 +1,30 @@
+.maincontainer{
+    width:1400px;
+    height:600px;
+    background-color:aqua;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    
+}
+.transform_box{
+    display: flex;
+    
+    width:200px;
+    height:200px;
+    background-color: crimson;
+    transform:rotate(360deg);
+    transition-duration: 5s;
+    
+}
+/* .transform_box:hover{
+    background-image: url("hacker pic.webp");
+    background-size: cover; 
+    transform:rotate(360deg);
+   transition-duration: 2s;
+
+    /* transform: skew(40deg); */
+    /* transform: scale(3); */
+    /* transform: translateX(150px); */
+    /* transform: translateY(150px); */

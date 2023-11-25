@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math objects</title>
+</head>
+<body>
+    <div class="container">
+        <h1>math objects</h1>
+    </div>
+    <script>
+        let m=Math;
+        console.log(m)
+
+        // printing math constants from math objects
+        console.log("value os math.E is : ",Math.E)
+        console.log("value os math.LN10 is : ",Math.LN10)
+        console.log("value os math.LN2 is : ",Math.LN2)
+        console.log("value os math.PI is : ",Math.PI)
+
+        //printing math functions
+        // round function
+        let a=19.34567
+        let b=78
+        console.log("value of a and b is : ",a,b)
+        console.log("Rounded value of a and b is ",Math.round(a),",",Math.round(b))
+        // power function
+        console.log("3 raised to the power 3 is : ",Math.pow(3,4))
+        //sqaureroot function
+        console.log("square root of 4 is : ",Math.sqrt(4))
+        console.log("square root of 144 is : ",Math.sqrt(144))
+        //ciel function and 
+        console.log("5.8 is rounded upto : ",Math.ceil(5.8))
+        console.log("5.8 is rounded downto : ",Math.floor(5.8))
+        //absolute function
+        console.log("absolute value of -4.68 is : ",Math.abs(-4.68))
+        //min function
+        console.log("min value in 1,100,67 ,89 is : ",Math.min(1,100,67,89))
+        //max function
+        console.log("max value in 1,100,67 ,89 is : ",Math.max(1,100,67,89))
+
+        //generate a random number 
+        for(let i=0;i<5;i++)
+        {
+        let n1=1;
+        let n2=5;
+        let randomnumber=n1+(n2-n1)*Math.random();
+        console.log("random number is : ",Math.round(randomnumber),"\n")
+        }
+
+    </script>
+</body>
+</html>
